@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/services.css">
+    <title>Services | danielautohub</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h3><span>Daniel</span>AutoHub</h3>
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn">
+                <button><a href="login.html">Register</a></button>
+                <!-- <button><a href="login.html">Login</a></button> -->
+            </div>
+
+            <nav class="mobile-nav" aria-hidden="true">
+                <button class="close-btn" aria-label="Close menu">×</button>
+                <div class="mobile-nav-inner">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                    <div class="mobile-nav-cta">
+                        <button class="secondary"><a href="login.html">Register</a></button>
+
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop src="./assest/video/hero-section video.mp4"></video>
+        <div class="hero-content">
+            <h1>Our Car Service</h1>
+            <p class="subtitle">Professional services for all car brands.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Services We Offer</h2>
+
+        <div class="service-card">
+
+            <div class="card">
+                <img src="./assest/images/services images/Regular Maintenance.jpg" alt="maintenance">
+                <h3>Maintenance</h3>
+                <p>Regular checkups to keep your car in top sharp.</p>
+                <button onclick="openBookingForm('Maintenance')">Book Now</button>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/services images/car maintenance.jpg" alt="Repair">
+                <h3>Repair</h3>
+                <p>Expert repair services for all makes and models.</p>
+                <button onclick="openBookingForm('Repair')">Book Now</button>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/services images/Detailing & Cleaning.jpg" alt="Car Detailing">
+                <h3>Car Detailing</h3>
+                <p>Total cleaning & polishing to make your car shine.</p>
+                <button onclick="openBookingForm('Detailing')">Book Now</button>
+            </div>
+
+            <div class="card">
+                <img src="./assest/images/services images/car maintenance.jpg" alt="Financing">
+                <h3>Financing</h3>
+                <p>We enable flexible Car financing </p>
+                <button onclick="openBookingForm('Financing')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands">
+        <h2>We Service These Brands</h2>
+
+        <div class="brands-logos">
+            <img src="./assest/images/brand logo/MERCEDES BENZ.jpg" alt="mercedes">
+            <img src="./assest/images/brand logo/bnw.jpg" alt="bwn">
+            <img src="./assest/images/brand logo/Tesla.jpg" alt="">
+            <img src="./assest/images/brand logo/toyota.jpg" alt="">
+            <img src="./assest/images/brand logo/Audi.jpg" alt="audi">
+            <img src="./assest/images/brand logo/Honda.jpg" alt="honda">
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeBookingForm()">&times;</span>
+
+            <h2 id="serviceTitle">Book Service</h2>
+
+            <form id="bookingForm" onsubmit="submitBooking(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label id="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label id="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+
+                <label id="car">Car Brands</label>
+                <select name="car" id="car" required>
+                    <option value="">Select Brands</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="BMW">BMW</option>
+                    <option value="toyota">Toyata</option>
+                    <option value="honda">Honda</option>
+                    <option value="audi">Audi</option>
+                    <option value="tesla">Tesla</option>
+                </select>
+
+                <label for="Message">Message</label>
+                <textarea name="message" id="message" placeholder="Any special request..." rows="5"></textarea>
+
+                <button type="submit">Submit</button>
+                <!-- <p>&copy; 2026 car services. All Rights Reserved</p> -->
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="content">
+            <div class="logo">
+                <a href="index.html">
+                    <h3><span>Daniel</span>AutoHub</h3>
+                </a>
+                <p>Your trusted destination for quality vehicles. We connects you with reliable cars at competitive
+                    prices, making your journey to ownership secure, and stress-free</p>
+
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div class="company">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="policy">
+                <h3>Policy</h3>
+
+                <ul>
+                    <li><a href="#">Warrancy Policy</a></li>
+                    <li><a href="#">Cancelation Policy</a></li>
+                    <li><a href="#">Delivery Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="help">
+                <h3>Help</h3>
+
+                <ul>
+                    <li><a href="#">AutoHub Care</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">How to Order</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <div class="icon">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+234 (708) 570 1486</p>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>danielautohub@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

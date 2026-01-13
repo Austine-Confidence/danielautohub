@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assest/favicon/" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Hero | danielautohub</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h3><span>Daniel</span>AutoHub</h3>
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn">
+                <button><a href="login.html">Register</a></button>
+                <!-- <button><a href="login.html">Login</a></button> -->
+            </div>
+
+            <nav class="mobile-nav" aria-hidden="true">
+                <button class="close-btn" aria-label="Close menu">×</button>
+                <div class="mobile-nav-inner">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                    <div class="mobile-nav-cta">
+                        <button class="secondary"><a href="login.html">Register</a></button>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <video loop autoplay muted src="./assest/video/orange car.mp4"></video>
+        <!-- <video loop autoplay muted src="./assest/images/services images/Custom Upgrades.mp4"></video> -->
+
+        <div class="hero-content">
+            <h1>Find Your Perfect <br><span>Drive</span></h1>
+            <p>Discover premium quality vehicles at Daniel AutoHub. Premium selection, best prices, and exceptional
+                service.</p>
+
+            <div class="hero-content-buttons">
+                <button class="btn-primary"><a href="shop.html">Browse Vehicles</a></button>
+                <button class="btn-secondary"><a href="services.html">Get In Touch</a></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="about-container">
+
+            <div class="about-video">
+                <video loop autoplay muted src="./assest/images/services images/Custom Upgrades.mp4"></video>
+            </div>
+            <div class="about-content">
+                <h2>About Our <Span>Company</Span></h2>
+                <p>We are committed to delivery high-quality vehicles with honesty, transparency, and unmatched customer
+                    satisfaction. Our mission is to make is to make car ownership simple, affordable, and stress-free
+                </p>
+
+                <a href="about.html" class="about-btn">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="header">
+        <h1>Luxury Car Shop</h1>
+
+        <div class="cart-info">
+            <span id="count">0</span> | Total: $<span id="total">0</span>
+        </div>
+    </section>
+
+    <section class="shop">
+
+        <div class="card">
+            <img src="./assest/images/benz/benz1.png" alt="benz">
+            <h3>Mercedes Benz</h3>
+            <p>$50,000</p>
+            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
+            <h3>BNW X5</h3>
+            <p>$46,000</p>
+            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="./assest/images/audi/audi1.jpg" alt="audi">
+            <h3>Audi RS7</h3>
+            <p>$60,000</p>
+            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="./assest/images/benz/benz1.png" alt="benz">
+            <h3>Mercedes Benz</h3>
+            <p>$50,000</p>
+            <button onclick="addToCart(50000)" class="card-button">Add To Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
+            <h3>BNW X5</h3>
+            <p class="price">$45,000</p>
+            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="./assest/images/audi/audi1.jpg" alt="audi">
+            <h3>Audi RS7</h3>
+            <p>$60,000</p>
+            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="./assest/images/bmw/bmw3.jpg" alt="Bnw">
+            <h3>BNW X5</h3>
+            <p>$45,000</p>
+            <button onclick="addToCart(45000)" class="card-button">Add To Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="./assest/images/audi/audi1.jpg" alt="audi">
+            <h3>Audi RS7</h3>
+            <p>$60,000</p>
+            <button onclick="addToCart(60000)" class="card-button">Add To Cart</button>
+        </div>
+
+        <a href="shop.html">See More</a>
+    </section>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+    </section>
+
+
+    <section class="testimonials fade-section">
+        <h2 class="title">What Our Customers Says</h2>
+        <p class="subtitle">Real experiences from people who trust us.</p>
+
+        <div class="carousel swipe">
+            <div class="track">
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/female1.jpg" alt="">
+                        <div>
+                            <h4>Daniella Okeke</h4>
+                            <span>Abuja</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Great service and smoth process. Highly recommended.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/user1.jpg" alt="">
+                        <div>
+                            <h4>Austine David</h4>
+                            <span>Lagos</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Excellent communication and quality vehicles.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/user6.jpg" alt="">
+                        <div>
+                            <h4>Micheal Johnson</h4>
+                            <span>Port Harcourt</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Fast delivery and professinal team.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/female user 3.jpg" alt="">
+                        <div>
+                            <h4>Faith Nnamdi</h4>
+                            <span>Owerri</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>affordable prices and friendly staff.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/female1.jpg" alt="">
+                        <div>
+                            <h4>Kelvin Adams</h4>
+                            <span>Benin</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Very smooth transaction from start to finish.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/female user2.jpg" alt="">
+                        <div>
+                            <h4>Blessing Uche</h4>
+                            <span>Enugu</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Very reliable dealership. I'm impressed.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/user5.jpg" alt="">
+                        <div>
+                            <h4>Emmanuel Peter</h4>
+                            <span>Ibadan</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>I love my new car. Thank You so much!</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/user4.jpg" alt="">
+                        <div>
+                            <h4>John Williams</h4>
+                            <span>Abia</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Customer service was excellent.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/female1.jpg" alt="">
+                        <div>
+                            <h4>Daniella Okeke</h4>
+                            <span>Abuja</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Great service and smoth process. Highly recommended.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/user1.jpg" alt="">
+                        <div>
+                            <h4>Austine David</h4>
+                            <span>Lagos</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Excellent communication and quality vehicles.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/user6.jpg" alt="">
+                        <div>
+                            <h4>Micheal Johnson</h4>
+                            <span>Port Harcourt</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Fast delivery and professinal team.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/female user 3.jpg" alt="">
+                        <div>
+                            <h4>Faith Nnamdi</h4>
+                            <span>Owerri</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>affordable prices and friendly staff.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/female1.jpg" alt="">
+                        <div>
+                            <h4>Kelvin Adams</h4>
+                            <span>Benin</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Very smooth transaction from start to finish.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/female user2.jpg" alt="">
+                        <div>
+                            <h4>Blessing Uche</h4>
+                            <span>Enugu</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Very reliable dealership. I'm impressed.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/user5.jpg" alt="">
+                        <div>
+                            <h4>Emmanuel Peter</h4>
+                            <span>Ibadan</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>I love my new car. Thank You so much!</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-item">
+                    <div class="profile">
+                        <img src="./assest/images/users/user4.jpg" alt="">
+                        <div>
+                            <h4>John Williams</h4>
+                            <span>Abia</span>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Customer service was excellent.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="verfication-sheet">
+        <div class="auction">
+            <div class="auction-text">
+                <h2>Japanese Auction Sheet Verfication</h2>
+                <p>Ensure transparency and confidence in your vehicle purchase with our expert Japanese Auction Sheet
+                    Verification services.</p>
+            </div>
+
+            <img src="./assest/images/verfication sheet.jpg" alt="Japanese Auction Sheet Verfication">
+        </div>
+    </section>
+
+
+    <section class="enhance">
+        <div class="enhance-content">
+            <h2>Ready to Enhance Your <span>Driving Experience?</span></h2>
+            <p>visit our showroom to explore our premium vehicles and services, or contact us to schedule a
+                consultation.</p>
+            <button><a href="contact.html">Contact Us</a></button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="content">
+            <div class="logo">
+                <a href="index.html">
+                    <h3><span>Daniel</span>AutoHub</h3>
+                </a>
+                <p>Your trusted destination for quality vehicles. We connects you with reliable cars at competitive
+                    prices, making your journey to ownership secure, and stress-free</p>
+
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div class="company">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="policy">
+                <h3>Policy</h3>
+
+                <ul>
+                    <li><a href="#">Warrancy Policy</a></li>
+                    <li><a href="#">Cancelation Policy</a></li>
+                    <li><a href="#">Delivery Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="help">
+                <h3>Help</h3>
+
+                <ul>
+                    <li><a href="#">AutoHub Care</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">How to Order</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <div class="icon">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+234 (708) 570 1486</p>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>danielautohub@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
