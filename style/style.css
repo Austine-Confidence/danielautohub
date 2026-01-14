@@ -459,9 +459,6 @@
   border: #e55a2b;
 }
 
-
-
-
 .brand {
   padding: 2rem 4rem;
 }
@@ -485,7 +482,7 @@
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .car-card:hover {
@@ -522,6 +519,29 @@
   cursor: pointer;
 }
 
+.car-card button:hover {
+  background-color: #cf4e22;
+}
+
+.btn-card {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn-card a{
+  text-decoration: none;
+  border: 2px solid #cf4e22;
+  color: #cf4e22;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+.btn-card a:hover {
+  background-color: #e55a2b;
+  color: #fff;
+  border: #e55a2b;
+}
+
 .cart-panel {
   position: fixed;
   top: 0;
@@ -556,9 +576,6 @@
   padding: 5px 8px;
   cursor: pointer;
 }
-
-
-
 
 .testimonials {
   background-color: #f9f9f9;
@@ -888,14 +905,13 @@
     width: 100%;
   }
 
-.car-card img {
-  height: 150px;
-}
+  .car-card img {
+    height: 150px;
+  }
 
-.car-card button {
-  width: 80%;
-}
-
+  .car-card button {
+    width: 80%;
+  }
 
   .testimonials {
     padding: 3rem 1.2rem;
